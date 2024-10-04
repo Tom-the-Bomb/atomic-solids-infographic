@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -10,6 +11,13 @@
 :root {
     --header-font: Ubuntu, monospace;
     --text-font: "Space Mono", monospace;
+
+    --light-header-text: rgb(238, 231, 255);
+
+    --light-shadow: rgb(132, 67, 157);
+    --dark-shadow: rgb(65, 39, 76);
+
+    --properties-section-bg: rgb(29, 103, 150);
 }
 
 html {
@@ -19,8 +27,20 @@ html {
         to right,
         rgb(208, 205, 214),
         rgb(244, 108, 248)
-    );
-    font-family: var(--text-font);
+    )
+    rgb(59, 31, 65);
+    font-family: var(--header-font);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+    margin: 0;
 }
 
 header {
@@ -29,31 +49,42 @@ header {
     gap: 1em;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    align-items: center;
-    gap: 1em;
+@media (900px <= width <= 1024px) {
+    main {
+        width: 75%;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
     main {
-        width: 50%;
+        width: 60%;
     }
 }
 
 main {
     background-color: white;
-    flex-grow: 1;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     gap: 1em;
     padding: 1em;
-    font-family: "Space Mono";
+    font-family: var(--text-font);
     font-style: bold;
     box-shadow: rgb(133, 119, 169) 20px 20px 100px;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-family: var(--text-font);
+}
+
+a {
+    color: rgb(78, 65, 113);
+}
+
+a:hover {
+    filter: brightness(150%);
 }
 
 #section-1 {
@@ -77,15 +108,11 @@ main {
     align-items: center;
     padding: 1em;
     gap: 0.25em;
+    flex: 1 1 0px;
 }
 
 h1, h2, h3 {
     margin: 0;
-}
-
-h1, h2 {
-    font-weight: 800;
-    font-size: 3em;
 }
 
 h1 {
@@ -93,24 +120,40 @@ h1 {
     width: fit;
     border-bottom: 2px solid white;
     padding-bottom: 0.5em;
-    color: rgb(29, 103, 150);
+    color: var(--properties-section-bg);
+    font-size: 3.5em;
+    font-weight: extrabold;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-family: "Space Mono", monospace;
     text-shadow: rgb(121, 110, 183) 1.5px 1.5px;
+    font-weight: extrabold;
 }
 
 h3 {
-    background-color: rgb(29, 103, 150);
+    background-color: var(--properties-section-bg);
     border-radius: 0.5em;
     padding: 0.5em;
     text-align: center;
-    color: rgb(238, 231, 255);
+    color: var(--light-header-text);
+
+    border-bottom: 5px solid var(--dark-shadow);
+    border-top: 1px solid var(--dark-shadow);
+    border-left: 1px solid var(--dark-shadow);
+    border-right: 3px solid var(--dark-shadow);
+    border-radius: 1em 1em 1em 1em;
 }
 
-h3 span {
+h3:hover {
+    border-bottom: 3px solid var(--dark-shadow);
+    border-right: 2px solid var(--dark-shadow);
+    margin-bottom: 2px;
+    transform: translateY(2px) translateX(1px);
+}
+
+h3 > span {
     color: rgb(213, 181, 232);
 }
 
@@ -118,6 +161,7 @@ iframe {
     border: 0.5em solid rgb(22, 66, 93);
     border-radius: 1em;
     width: 90%;
+    flex-grow: 1;
 }
 
 #ionic-bonding {
@@ -126,6 +170,17 @@ iframe {
 
 ol > li {
     text-align: start;
+}
+
+ol > li > h4 {
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 2px var(--light-header-text) solid;
+}
+
+h1, p {
+    text-shadow: 2px 2px 5px rgb(0 0 0 / 0.25);
 }
 
 #factors-img {
@@ -150,10 +205,6 @@ ol > li {
     width: 90%;
 }
 
-li {
-    text-shadow: 2px 2px 5px rgb(0 0 0 / 0.25);
-}
-
 #properties-section {
     gap: 2em;
 }
@@ -170,10 +221,10 @@ li {
     flex-direction: row;
     justify-content: space-around;
     width: 90%;
-    border-bottom: 5px solid rgb(29, 103, 150);
-    border-top: 1px solid rgb(29, 103, 150);
-    border-left: 1px solid rgb(29, 103, 150);
-    border-right: 1px solid rgb(29, 103, 150);
+    border-bottom: 5px solid var(--light-shadow);
+    border-top: 1px solid var(--light-shadow);
+    border-left: 1px solid var(--light-shadow);
+    border-right: 3px solid var(--light-shadow);
     border-radius: 1em 1em 1em 1em;
     padding: 1em;
 }
@@ -188,9 +239,15 @@ li {
 }
 
 .property {
+    flex: 1 1 0px;
     display: flex;
     flex-direction: row;
     gap: 1em;
+}
+
+.property p {
+    font-size: 0.8em;
+    text-align: start;
 }
 
 .property-header {
@@ -198,11 +255,12 @@ li {
     flex-direction: column;
     align-items: space-around;
     gap: 1em;
+    height: fit-content;
 }
 
 .property-header > div {
     padding-bottom: 0.5em;
-    border-bottom: 2px rgb(238, 231, 255) solid;
+    border-bottom: 2px var(--light-header-text) solid;
 }
 
 .values {
