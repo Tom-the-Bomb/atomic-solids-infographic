@@ -3,27 +3,23 @@
     position: fixed;
     bottom: 0;
     left: 0;
-
     width: 100%;
     height: 100dvh;
-
-    overflow: hidden;
-    z-index: -1000;
+    z-index: -100;
 }
 
-#squares li {
+#squares img {
     position: absolute;
     display: block;
     list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 30px;
     animation: squares infinite linear;
     bottom: -150px;
     border-radius: 10%;
 }
 
-#squares li:nth-child(1) {
+#squares img:nth-child(1) {
     left: 25%;
     width: 80px;
     height: 80px;
@@ -31,23 +27,23 @@
     animation-duration: 25s;
 }
 
-#squares li:nth-child(2) {
+#squares img:nth-child(2) {
     left: 10%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     animation-delay: 2s;
     animation-duration: 12s;
 }
 
-#squares li:nth-child(3) {
+#squares img:nth-child(3) {
     left: 70%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     animation-delay: 4s;
     animation-duration: 25s;
 }
 
-#squares li:nth-child(4) {
+#squares img:nth-child(4) {
     left: 40%;
     width: 60px;
     height: 60px;
@@ -55,15 +51,15 @@
     animation-duration: 18s;
 }
 
-#squares li:nth-child(5) {
+#squares img:nth-child(5) {
     left: 65%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     animation-delay: 0s;
     animation-duration: 25s;
 }
 
-#squares li:nth-child(6) {
+#squares img:nth-child(6) {
     left: 75%;
     width: 110px;
     height: 110px;
@@ -71,7 +67,7 @@
     animation-duration: 25s;
 }
 
-#squares li:nth-child(7) {
+#squares img:nth-child(7) {
     left: 35%;
     width: 150px;
     height: 150px;
@@ -79,7 +75,7 @@
     animation-duration: 25s;
 }
 
-#squares li:nth-child(8) {
+#squares img:nth-child(8) {
     left: 50%;
     width: 25px;
     height: 25px;
@@ -87,15 +83,15 @@
     animation-duration: 45s;
 }
 
-#squares li:nth-child(9) {
+#squares img:nth-child(9) {
     left: 20%;
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     animation-delay: 2s;
     animation-duration: 35s;
 }
 
-#squares li:nth-child(10) {
+#squares img:nth-child(10) {
     left: 85%;
     width: 150px;
     height: 150px;
@@ -106,12 +102,12 @@
 @keyframes squares {
     from {
         transform: translateY(0) rotate(0deg);
-        opacity: 1;
+        opacity: 0.5;
         border-radius: 10%;
     }
     to {
         transform: translateY(-100dvh) rotate(720deg);
-        opacity: 0.25;
+        opacity: 0.1;
         border-radius: 50%;
     }
 }
