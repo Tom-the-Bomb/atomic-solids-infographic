@@ -77,6 +77,10 @@
 }
 
 html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background:
         fixed
         linear-gradient(
@@ -90,30 +94,29 @@ html {
     color: white;
     text-align: center;
 
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-body {
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-
     padding: 2em;
     margin: 0;
 }
 
-header {
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
     width: 100%;
+    margin: 0;
+}
+
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1em;
+    width: 100%;
 }
 
 main {
@@ -181,6 +184,7 @@ iframe {
 }
 
 #ionic-bonding-img, #factors-img {
+    max-width: 100%;
     padding-left: 1em;
     padding-right: 1em;
     flex-grow: 1;
