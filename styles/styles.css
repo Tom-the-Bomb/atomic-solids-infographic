@@ -27,7 +27,7 @@
 }
 
 @media (max-width: 1200px) {
-    #section-1, #div-factors, #properties-header, .properties {
+    #section-1, #div-factors, #properties-header, .properties, .property {
         flex-wrap: wrap;
     }
 
