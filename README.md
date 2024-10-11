@@ -8,11 +8,13 @@ An infographic made with raw `HTML` and `CSS` for a chemistry class assignment
 ## Sources
 
 - Potassium fluoride. In *WebElements Periodic Table.* (n.d.). Retrieved October 5, 2024, from
-<https://www.webelements.com/compounds/potassium/potassium_fluoride.html>
+    <https://www.webelements.com/compounds/potassium/potassium_fluoride.html>
 
-- Wikipedia contributors. (2024, August 27). Sodium fluoride. In *Wikipedia, The Free Encyclopedia.* Retrieved 04:31, October 4, 2024, from <https://en.wikipedia.org/w/index.php?title=Sodium_fluoride&oldid=1242517810>
+- Wikipedia contributors. (2024, August 27). Sodium fluoride. In *Wikipedia, The Free Encyclopedia.* Retrieved 04:31,
+    October 4, 2024, from <https://en.wikipedia.org/w/index.php?title=Sodium_fluoride&oldid=1242517810>
 
-- Wikipedia contributors. (2024, April 10). Potassium fluoride. In *Wikipedia, The Free Encyclopedia.* Retrieved 04:33, October 4, 2024, from <https://en.wikipedia.org/w/index.php?title=Potassium_fluoride&oldid=1218162840>
+- Wikipedia contributors. (2024, April 10). Potassium fluoride. In *Wikipedia, The Free Encyclopedia.* Retrieved 04:33,
+    October 4, 2024, from <https://en.wikipedia.org/w/index.php?title=Potassium_fluoride&oldid=1218162840>
 
 - ### Media
 
